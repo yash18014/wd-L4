@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 const todoList = require("../todo");
-// let today = new Date().toLocaleDateString("en-CA");
+
 
 const { all, markAsComplete, add, overdue, dueToday, dueLater } = todoList();
 
@@ -34,13 +34,10 @@ describe("Todolist Testing", () => {
 
   test("Add a new todo in list", () => {
     const todoItemsCount = all.length;
-
-    // let length = all.length;
-
-    add({
+   add({
       title: "node js learning",
       completed: false,
-      // dueDate: new Date().toLocaleDateString("en-CA"),
+      
       duedate: today,
     });
 
