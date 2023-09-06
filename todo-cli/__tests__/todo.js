@@ -1,11 +1,12 @@
 /* eslint-disable no-undef */
 const todoList = require("../todo");
+let today = new Date().toLocaleDateString("en-CA");
 
 
 const { all, markAsComplete, add, overdue, dueToday, dueLater } = todoList();
 
-const dateObj = new Date();
-const today = dateObj.toLocaleDateString("en-CA")
+// const dateObj = new Date();
+// const today = dateObj.toLocaleDateString("en-CA")
 
 
 describe("Todolist Testing", () => {
@@ -37,7 +38,6 @@ describe("Todolist Testing", () => {
    add({
       title: "node js learning",
       completed: false,
-      
       duedate: today,
     });
 
