@@ -6,16 +6,16 @@ const { all, markAsComplete, add, overdue, dueToday, dueLater } = todoList();
 
 describe("Todolist Testing", () => {
   beforeAll(() => {
-    // add({
-    //   title: "DAA algorithums",
-    //   completed: false,
-    //   dueDate: new Date().toLocaleDateString("en-CA"),
-    // });
     add({
-      title: "node js learning",
+      title: "DAA algorithums",
       completed: false,
       dueDate: new Date().toLocaleDateString("en-CA"),
     });
+    // add({
+    //   title: "node js learning",
+    //   completed: false,
+    //   dueDate: new Date().toLocaleDateString("en-CA"),
+    // });
   });
 
   test("Add a new todo in list", () => {
