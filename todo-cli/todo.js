@@ -5,10 +5,10 @@ const todoList = () => {
   };
   const markAsComplete = (index) => {
     // all[index].completed = true;
-    (all[index].completed = true) || (all[index].completed = false) ;
+    all[index].completed = true ;
   };
 
- let today = new Date().toLocaleDateString("en-CA");
+ const today = new Date().toLocaleDateString("en-CA");
 
 
   const overdue = () => {
