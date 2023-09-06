@@ -4,7 +4,8 @@ const todoList = () => {
     all.push(todoItem);
   };
   const markAsComplete = (index) => {
-    all[index].completed = true;
+    // all[index].completed = true;
+    (all[index].completed = true) || (all[index].completed = false) ;
   };
 
  let today = new Date().toLocaleDateString("en-CA");
