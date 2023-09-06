@@ -46,7 +46,7 @@ describe("Todolist Testing", () => {
       listOfTodos.every((todo) => {
         return todo.dueDate < today;
       })
-    ).toBe(false);
+    ).toBe(true);
   });
 
   test("retrive all todos that are dueToday", () => {
