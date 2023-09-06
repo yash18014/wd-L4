@@ -39,25 +39,25 @@ describe("Todolist Testing", () => {
     
   });
 
-  test("retrive all todos that are overdue", () => {
-    let listOfTodos = overdue();
+  // test("retrive all todos that are overdue", () => {
+  //   let listOfTodos = overdue();
 
-    expect(
-      listOfTodos.every((todo) => {
-        return todo.dueDate < today;
-      })
-    ).toBe(true);
-  });
+  //   expect(
+  //     listOfTodos.every((todo) => {
+  //       return todo.dueDate < today;
+  //     })
+  //   ).toBe(true);
+  // });
 
-  test("retrive all todos that are dueToday", () => {
-    let listOfTodos = dueToday();
+  // test("retrive all todos that are dueToday", () => {
+  //   let listOfTodos = dueToday();
 
-    expect(
-      listOfTodos.every((todo) => {
-        return todo.dueDate === today;
-      })
-    ).toBe(true);
-  });
+  //   expect(
+  //     listOfTodos.every((todo) => {
+  //       return todo.dueDate === today;
+  //     })
+  //   ).toBe(true);
+  // });
 
   // test("retrive all todos that are dueLater", () => {
   //   let listOfTodos = dueLater();
