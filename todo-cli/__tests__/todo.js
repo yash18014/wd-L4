@@ -4,7 +4,7 @@ const todoList = require("../todo");
 
 const { all, markAsComplete, add, overdue, dueToday, dueLater } = todoList();
 
-const dateobj = new Date();
+const dateObj = new Date();
 const today = dateObj.toLocaleDateString("en-CA")
 
 
