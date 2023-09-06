@@ -17,21 +17,21 @@ describe("Todolist Testing", () => {
       dueDate: new Date().toLocaleDateString("en-CA"),
    });
     
-    add({
-      title: "Complete Assignment",
-      completed: false,
-      dueDate: new Date(new Date().setDate(dateObj.getDate() - 1)).toLocaleDateString("en-CA"),
-    });
-    add({
-      title: "Complete Wd-201",
-      completed: false,
-      dueDate: new Date(new Date().setDate(dateObj.getDate() + 1)).toLocaleDateString("en-CA"),
-    });
-    add({
-      title: "node js learning",
-      completed: false,
-      dueDate: new Date().toLocaleDateString("en-CA"),
-    });
+    // add({
+    //   title: "Complete Assignment",
+    //   completed: false,
+    //   dueDate: new Date(new Date().setDate(dateObj.getDate() - 1)).toLocaleDateString("en-CA"),
+    // });
+    // add({
+    //   title: "Complete Wd-201",
+    //   completed: false,
+    //   dueDate: new Date(new Date().setDate(dateObj.getDate() + 1)).toLocaleDateString("en-CA"),
+    // });
+    // add({
+    //   title: "node js learning",
+    //   completed: false,
+    //   dueDate: new Date().toLocaleDateString("en-CA"),
+    // });
   });
 
    test("Add a new todo in list", () => {
