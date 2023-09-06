@@ -11,16 +11,16 @@ describe("Todolist Testing", () => {
       completed: false,
       dueDate: new Date().toLocaleDateString("en-CA"),
     });
-    add({
-      title: "Complete Assignment",
-      completed: false,
-      dueDate: new Date(new Date().setDate(dateObj.getDate() - 1)).toLocaleDateString("en-CA"),
-    });
-    add({
-      title: "Complete Wd-201",
-      completed: false,
-      dueDate: new Date(new Date().setDate(dateObj.getDate() + 1)).toLocaleDateString("en-CA"),
-    });
+    // add({
+    //   title: "Complete Assignment",
+    //   completed: false,
+    //   dueDate: new Date(new Date().setDate(dateObj.getDate() - 1)).toLocaleDateString("en-CA"),
+    // });
+    // add({
+    //   title: "Complete Wd-201",
+    //   completed: false,
+    //   dueDate: new Date(new Date().setDate(dateObj.getDate() + 1)).toLocaleDateString("en-CA"),
+    // });
     // add({
     //   title: "node js learning",
     //   completed: false,
@@ -49,33 +49,33 @@ describe("Todolist Testing", () => {
     
   });
 
-  // test("retrive all todos that are overdue", () => {
-  //   let listOfTodos = overdue();
+  test("retrive all todos that are overdue", () => {
+    let listOfTodos = overdue();
 
-  //   expect(
-  //     listOfTodos.every((todo) => {
-  //       return todo.dueDate < today;
-  //     })
-  //   ).toBe(true);
-  // });
+    expect(
+      listOfTodos.every((todo) => {
+        return todo.dueDate < today;
+      })
+    ).toBe(true);
+  });
 
-  // test("retrive all todos that are dueToday", () => {
-  //   let listOfTodos = dueToday();
+  test("retrive all todos that are dueToday", () => {
+    let listOfTodos = dueToday();
 
-  //   expect(
-  //     listOfTodos.every((todo) => {
-  //       return todo.dueDate === today;
-  //     })
-  //   ).toBe(true);
-  // });
+    expect(
+      listOfTodos.every((todo) => {
+        return todo.dueDate === today;
+      })
+    ).toBe(true);
+  });
 
-  // test("retrive all todos that are dueLater", () => {
-  //   let listOfTodos = dueLater();
+  test("retrive all todos that are dueLater", () => {
+    let listOfTodos = dueLater();
 
-  //   expect(
-  //     listOfTodos.every((todo) => {
-  //       return todo.dueDate > today;
-  //     })
-  //   ).toBe(true);
-  // });
+    expect(
+      listOfTodos.every((todo) => {
+        return todo.dueDate > today;
+      })
+    ).toBe(true);
+  });
 });
